@@ -67,11 +67,11 @@ export default function ({
         }
         else {
             sound.floresta.pause();
-            cardFloresta.style.fill = '#000';
-            buttonRectFloresta.style.fill = '#323238';
-            buttonCircleFloresta.style.fill = '#323238';
+            cardFloresta.style.fill = '#C4C4CC';
+            buttonRectFloresta.style.fill = '#fff';
+            buttonCircleFloresta.style.fill = '#fff';
         }
-        
+
     })
 
     chuva.addEventListener('click', () => {
@@ -94,11 +94,12 @@ export default function ({
         }
         else {
             sound.chuva.pause();
-            cardChuva.style.fill = '#323238';
-            buttonRectChuva.style.fill = '#323238';
-            buttonCircleChuva.style.fill = '#323238';
+            cardChuva.style.fill = '#C4C4CC';
+            buttonRectChuva.style.fill = '#fff';
+            buttonCircleChuva.style.fill = '#fff';
         }
        
+
     })
     cafeteria.addEventListener('click', () => {
         cafeteria.classList.toggle('selectedCard');
@@ -112,6 +113,7 @@ export default function ({
         lareira.classList.remove('selectedCard');
         lareira.classList.add('card');
         sound.lareira.pause();
+        
         if (cafeteria.classList.contains('selectedCard')) {
             sound.cafeteria.play();
             cardCafeteria.style.fill = '#fff';
@@ -120,10 +122,11 @@ export default function ({
         }
         else {
             sound.cafeteria.pause();
-            cardCafeteria.style.fill = '#323238';
-            buttonRectCafeteria.style.fill = '#323238';
-            buttonCircleCafeteria.style.fill = '#323238';
+            cardCafeteria.style.fill = '#C4C4CC';
+            buttonRectCafeteria.style.fill = '#fff';
+            buttonCircleCafeteria.style.fill = '#fff';
         }
+        
     })
     lareira.addEventListener('click', () => {
         lareira.classList.toggle('selectedCard');
@@ -145,11 +148,14 @@ export default function ({
         }
         else {
             sound.lareira.pause();
-            cardLareira.style.fill = '#323238';
-            buttonRectLareira.style.fill = '#323238';
-            buttonCircleLareira.style.fill = '#323238';
+            cardLareira.style.fill = '#C4C4CC';
+            buttonRectLareira.style.fill = '#fff';
+            buttonCircleLareira.style.fill = '#fff';
         }
+        
+
     })
+
     light.addEventListener('click', () => {
         document.body.style.backgroundColor = '#121214'
         light.classList.toggle('hide')
