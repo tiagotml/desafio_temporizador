@@ -18,7 +18,11 @@ const {
     buttonRectCafeteria,
     buttonCircleCafeteria,
     buttonRectLareira,
-    buttonCircleLareira
+    buttonCircleLareira,
+    cardChuva,
+    cardCafeteria,
+    cardLareira,
+    cardFloresta
 } = elements;
 export default function ({
     timer,
@@ -28,7 +32,7 @@ export default function ({
     darkFill,
     lightFill,
     darkButton,
-    lightButton
+    lightButton,
 }) {
 
     buttonStart.addEventListener('click', () => {
@@ -57,11 +61,17 @@ export default function ({
         sound.lareira.pause();
         if (floresta.classList.contains('selectedCard')) {
             sound.floresta.play();
+            cardFloresta.style.fill = '#fff';
+            buttonRectFloresta.style.fill = '#fff';
+            buttonCircleFloresta.style.fill = '#fff';
         }
         else {
             sound.floresta.pause();
+            cardFloresta.style.fill = '#000';
+            buttonRectFloresta.style.fill = '#323238';
+            buttonCircleFloresta.style.fill = '#323238';
         }
-
+        
     })
 
     chuva.addEventListener('click', () => {
@@ -78,10 +88,17 @@ export default function ({
         sound.lareira.pause();
         if (chuva.classList.contains('selectedCard')) {
             sound.chuva.play();
+            cardChuva.style.fill = '#fff';
+            buttonRectChuva.style.fill = '#fff';
+            buttonCircleChuva.style.fill = '#fff';
         }
         else {
             sound.chuva.pause();
+            cardChuva.style.fill = '#323238';
+            buttonRectChuva.style.fill = '#323238';
+            buttonCircleChuva.style.fill = '#323238';
         }
+       
     })
     cafeteria.addEventListener('click', () => {
         cafeteria.classList.toggle('selectedCard');
@@ -97,9 +114,15 @@ export default function ({
         sound.lareira.pause();
         if (cafeteria.classList.contains('selectedCard')) {
             sound.cafeteria.play();
+            cardCafeteria.style.fill = '#fff';
+            buttonRectCafeteria.style.fill = '#fff';
+            buttonCircleCafeteria.style.fill = '#fff';
         }
         else {
             sound.cafeteria.pause();
+            cardCafeteria.style.fill = '#323238';
+            buttonRectCafeteria.style.fill = '#323238';
+            buttonCircleCafeteria.style.fill = '#323238';
         }
     })
     lareira.addEventListener('click', () => {
@@ -116,9 +139,15 @@ export default function ({
         sound.cafeteria.pause();
         if (lareira.classList.contains('selectedCard')) {
             sound.lareira.play();
+            cardLareira.style.fill = '#fff';
+            buttonRectLareira.style.fill = '#fff';
+            buttonCircleLareira.style.fill = '#fff';
         }
         else {
             sound.lareira.pause();
+            cardLareira.style.fill = '#323238';
+            buttonRectLareira.style.fill = '#323238';
+            buttonCircleLareira.style.fill = '#323238';
         }
     })
     light.addEventListener('click', () => {

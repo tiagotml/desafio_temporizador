@@ -35,8 +35,9 @@ function darkFill() {
     cardCafeteria.style.fill = '#323238'
     cardLareira.style.fill = '#323238'
     cardFloresta.style.fill = '#323238'
-    cardChuva.style.fill = '#fff'
+    cardChuva.style.fill = '#323238'
 }
+
 function lightFill() {
     cardFloresta.style.fill = '#c4c4cc'
     cardChuva.style.fill = '#c4c4cc'
@@ -56,6 +57,8 @@ function lightButton(){
     cardSubFiveMinutes.style.fill = '#fff'
 }
 
+
+
 events({
     timer,
     sound,
@@ -64,5 +67,5 @@ events({
     darkFill,
     lightFill,
     darkButton,
-    lightButton
+    lightButton,
 });
