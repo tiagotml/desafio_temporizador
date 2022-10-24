@@ -75,13 +75,16 @@ button svg {
     background-color: #e1e1e6;
     border-radius: 2.4rem;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    align-items: center;
 }
+
 
 .cardDark {
     background-color: #323238;
-    border-radius: 2.4rem;
-    cursor: pointer;
-    padding: 4.8rem;
+    
 }
 
 .selectedCard {
@@ -91,6 +94,10 @@ button svg {
     cursor: pointer;
     transform: scale(1.1);
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    align-items: center;
 }
 
 .hide {
@@ -119,4 +126,6 @@ button svg {
 .dark {
     cursor: pointer;
 }
+
+
 

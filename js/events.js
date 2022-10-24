@@ -8,16 +8,27 @@ const {
     chuva,
     cafeteria,
     lareira,
+    time,
     light,
     dark,
-    time,
-    card
+    buttonRectFloresta,
+    buttonCircleFloresta,
+    buttonRectChuva,
+    buttonCircleChuva,
+    buttonRectCafeteria,
+    buttonCircleCafeteria,
+    buttonRectLareira,
+    buttonCircleLareira
 } = elements;
 export default function ({
     timer,
     sound,
     addFive,
     subFive,
+    darkFill,
+    lightFill,
+    darkButton,
+    lightButton
 }) {
 
     buttonStart.addEventListener('click', () => {
@@ -50,6 +61,7 @@ export default function ({
         else {
             sound.floresta.pause();
         }
+
     })
 
     chuva.addEventListener('click', () => {
@@ -114,13 +126,45 @@ export default function ({
         light.classList.toggle('hide')
         dark.classList.toggle('hide')
         time.style.color = '#fff'
+        floresta.classList.add('cardDark')
+        chuva.classList.add('cardDark')
+        cafeteria.classList.add('cardDark')
+        lareira.classList.add('cardDark')
+        buttonCircleFloresta.style.fill = '#fff'
+        buttonRectFloresta.style.fill = '#fff'
+        buttonCircleChuva.style.fill = '#fff'
+        buttonRectChuva.style.fill = '#fff'
+        buttonCircleCafeteria.style.fill = '#fff'
+        buttonRectCafeteria.style.fill = '#fff'
+        buttonCircleLareira.style.fill = '#fff'
+        buttonRectLareira.style.fill = '#fff'
+        lightFill()
+        lightButton()
+
+
     })
     dark.addEventListener('click', () => {
         document.body.style.backgroundColor = '#fff'
         light.classList.toggle('hide')
         dark.classList.toggle('hide')
         time.style.color = '#323238'
-        floresta.classList.remove('cardDark')
         floresta.classList.add('card')
+        chuva.classList.add('card')
+        chuva.classList.remove('cardDark')
+        floresta.classList.remove('cardDark')
+        cafeteria.classList.remove('cardDark')
+        lareira.classList.remove('cardDark')
+        buttonCircleFloresta.style.fill = '#323238'
+        buttonRectFloresta.style.fill = '#323238'
+        buttonCircleChuva.style.fill = '#323238'
+        buttonRectChuva.style.fill = '#323238'
+        buttonCircleCafeteria.style.fill = '#323238'
+        buttonRectCafeteria.style.fill = '#323238'
+        buttonCircleLareira.style.fill = '#323238'
+        buttonRectLareira.style.fill = '#323238'
+        darkFill()
+        darkButton()
+
     })
+
 }
