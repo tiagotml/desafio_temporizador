@@ -100,3 +100,12 @@ button svg {
         margin-bottom: 4rem;
     }
 }
+.lightToDark{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 6rem;
+    padding-right: 6rem;
+}
+.light, .dark{
+    cursor: pointer;
+}

@@ -7,7 +7,10 @@ const {
     floresta,
     chuva,
     cafeteria,
-    lareira
+    lareira,
+    light,
+    dark,
+    time
 } = elements;
 export default function ({
     timer,
@@ -104,5 +107,16 @@ export default function ({
         else {
             sound.lareira.pause();
         }
+    })
+    light.addEventListener('click', () => {
+        document.body.style.backgroundColor = '#121214'
+        light.classList.toggle('hide')
+        dark.classList.toggle('hide')
+        time.style.color = '#fff'
+    })
+    dark.addEventListener('click', () => {
+        document.body.style.backgroundColor = '#fff'
+        light.classList.toggle('hide')
+        dark.classList.toggle('hide')
     })
 }

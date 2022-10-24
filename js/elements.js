@@ -8,6 +8,9 @@ const floresta = document.querySelector('.floresta');
 const chuva = document.querySelector('.chuva');
 const cafeteria = document.querySelector('.cafeteria');
 const lareira = document.querySelector('.lareira');
+const light = document.querySelector('.light');
+const dark = document.querySelector('.dark');
+const time = document.querySelector('.time');
 export const elements = {
     buttonStart,
     buttonStop,
@@ -18,7 +21,10 @@ export const elements = {
     floresta,
     chuva,
     cafeteria,
-    lareira
+    lareira,
+    light,
+    dark,
+    time
 }
 
 
