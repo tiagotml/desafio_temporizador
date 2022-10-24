@@ -10,7 +10,8 @@ const {
     lareira,
     light,
     dark,
-    time
+    time,
+    card
 } = elements;
 export default function ({
     timer,
@@ -118,5 +119,8 @@ export default function ({
         document.body.style.backgroundColor = '#fff'
         light.classList.toggle('hide')
         dark.classList.toggle('hide')
+        time.style.color = '#323238'
+        floresta.classList.remove('cardDark')
+        floresta.classList.add('card')
     })
 }

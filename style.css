@@ -59,8 +59,7 @@ button svg {
 
 .start svg path,
 .stop svg path,
-.pause svg path
-.addFiveMinutes svg path,
+.pause svg path .addFiveMinutes svg path,
 .subFiveMinutes svg path {
     background-color: #323238;
 }
@@ -77,7 +76,15 @@ button svg {
     border-radius: 2.4rem;
     cursor: pointer;
 }
-.selectedCard{
+
+.cardDark {
+    background-color: #323238;
+    border-radius: 2.4rem;
+    cursor: pointer;
+    padding: 4.8rem;
+}
+
+.selectedCard {
     background-color: #02799d;
     padding: 4.8rem;
     border-radius: 2.4rem;
@@ -100,12 +107,16 @@ button svg {
         margin-bottom: 4rem;
     }
 }
-.lightToDark{
+
+.lightToDark {
     display: flex;
     justify-content: flex-end;
     padding-top: 6rem;
     padding-right: 6rem;
 }
-.light, .dark{
+
+.light,
+.dark {
     cursor: pointer;
 }
+

@@ -11,6 +11,7 @@ const lareira = document.querySelector('.lareira');
 const light = document.querySelector('.light');
 const dark = document.querySelector('.dark');
 const time = document.querySelector('.time');
+const card = document.querySelector('.card')
 export const elements = {
     buttonStart,
     buttonStop,
@@ -24,7 +25,8 @@ export const elements = {
     lareira,
     light,
     dark,
-    time
+    time,
+    card
 }
 
 
